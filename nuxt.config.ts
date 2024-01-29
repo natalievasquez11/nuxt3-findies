@@ -13,6 +13,9 @@ export default defineNuxtConfig({
     dirs: ["stores"]
   },
   nitro: {
-    preset: 'node-server'
-  }
+    preset: 'node-server',
+    prerender: {
+      routes: ['/nuxt3-fundies']
+    }
+  },
 })
